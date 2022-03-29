@@ -21,7 +21,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.get("/", (req, res) => {
-  res.send("User Registration Express API");
+  res.send("User Registration Express API!!");
 });
 
 app.use(authRoutes);
