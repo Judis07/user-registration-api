@@ -1,19 +1,19 @@
-POST http://localhost:8000/signup
+POST https://user-registration-api.vercel.app/signup
 content-type: application/json
 
 {
-    "email": "arvind@test.com",
-    "password": "mypassword123"
+    "email": "arvind@test2.com",
+    "password": "mypas"
 }
 
 
 
 #####################
 
-POST http://localhost:8000/login
+POST https://user-registration-api.vercel.app/login
 content-type: application/json
 
 {
     "email": "arvind@test.com",
-    "password": "mypassword12"
+    "password": "mypassword123"
 }

@@ -24,7 +24,7 @@ module.exports.signup_post = async (req, res) => {
     res.status(201).json({ user: { id: user._id, email, token } });
   } catch (err) {
     // const errors = handleErrors(err);
-    res.status(400).json(err);
+    res.status(400).json({ error: err.message });
   }
 };
 module.exports.login_post = async (req, res) => {
